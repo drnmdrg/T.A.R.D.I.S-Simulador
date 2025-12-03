@@ -1,0 +1,16 @@
+{
+  "DESTINOS": [
+    { "nombre": "Año 1963 - Londres", "riesgo": 2 },
+    { "nombre": "Año 1815 - Waterloo", "riesgo": 4 },
+    { "nombre": "Año 2500 - Colonia espacial", "riesgo": 5 },
+    { "nombre": "Planeta desconocido: Skaros", "riesgo": 7 },
+    { "nombre": "Año 3000000 - Era posthumana", "riesgo": 9 }
+  ],
+  "COMPANEROS": [
+    "Rose Tyler",
+    "Martha Jones",
+    "Donna Noble",
+    "Clara Oswald",
+    "Bill Potts"
+  ]
+}

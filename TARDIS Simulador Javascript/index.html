@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>simulador de TARDIS</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    margin: 20px;
+  }
+  h1, h2 {
+    color: #4db8ff;
+  }
+  .panel {
+    border: 1px solid #444;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #1a1a1a;
+  }
+  button {
+    margin-top: 10px;
+    padding: 6px 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Consola de la TARDIS</h1>
+
+<div class="panel">
+  <h2>Piloto</h2>
+  <form id="pilotoForm">
+    <input type="text" id="pilotoInput" placeholder="Nombre del piloto">
+    <button type="submit">Registrar piloto</button>
+  </form>
+
+  <p><b>Piloto actual:</b> <span id="pilotoNombre">No registrado</span></p>
+</div>
+
+
+<div class="panel">
+  <h2>Compañero</h2>
+  <select id="companeroSelect"></select>
+  <p><b>Compañero actual:</b> <span id="companeroNombre">No seleccionado</span></p>
+</div>
+
+
+<div class="panel">
+  <h2>Destino</h2>
+  <select id="destinoSelect"></select>
+  <p><b>Destino actual:</b> <span id="destinoNombre">No seleccionado</span></p>
+</div>
+
+
+<div class="panel">
+  <h2>Energía de la TARDIS</h2>
+  <p><b>Energía:</b> <span id="energiaValor">100%</span></p>
+  <button id="recargarBtn">Recargar +10%</button>
+</div>
+
+
+<div class="panel">
+  <h2>Escaneo del ambiente</h2>
+  <button id="escanearBtn">Escanear</button>
+  <ul id="escanearResultados"></ul>
+</div>
+
+<div class="panel">
+  <h2>Viaje temporal</h2>
+  <button id="viajarBtn">Iniciar viaje</button>
+  <p id="viajeResultado"></p>
+</div>
+
+<div class="panel">
+  <h2>Escaner temporal</h2>
+  <button id="escanerBtn" onclick="window.location.href='/pages/escaner.html'">Ver escaner</button>
+</div>
+
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escáner Temporal — TARDIS</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Escáner Temporal</h1>
+  <p>La TARDIS detecta fluctuaciones del tiempo‑espacio. Introduce una coordenada temporal y el escáner intentará identificar qué tipo de anomalía podría haber allí.</p>
+
+  <div class="panel">
+    <h2>Consultar anomalía</h2>
+    <label>Coordenada temporal (año aproximado)<br>
+      <input id="inputTiempo" type="number" placeholder="Ej: 1666, 2025, 5000000">
+    </label>
+    <br>
+    <button onclick="analizarTiempo()">Analizar</button>
+  </div>
+
+  <div class="panel">
+    <h2>Resultado del escáner</h2>
+    <p id="resultado"></p>
+  </div>
+
+  <p><a href="/index.html">← Volver a la Consola</a></p>
+
+  <script src="/js/escaner.js"></script>
+</body>
+</html>
